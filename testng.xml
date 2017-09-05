@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="iUaPositiveTesting">
+    <test name="testngTest">
+        <classes>
+            <class name="MainTest" >
+            <methods>
+                <include name="sendMessageBetweenUsersWithDelete"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

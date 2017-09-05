@@ -23,10 +23,10 @@ public class LoginPopupPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public MailPage login(String login, String password){
+    public MainPage login(String login, String password){
         this.loginInput.sendKeys(login);
         this.passwordInput.sendKeys(password);
         this.submitButton.click();
-        return new MailPage(driver, wait);
+        return new MainPage(driver, wait);
     }
 }
